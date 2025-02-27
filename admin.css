@@ -1,0 +1,53 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.header{
+    background-color: skyblue;
+    line-height: 4.375rem;
+    padding-left: 1.875rem;
+}
+.title_1,title_1:hover{
+    text-decoration: none;
+    font-weight: 600;
+}
+.logout{
+    float: right;
+    padding-right: 1.875rem ;
+    padding-top:0.9375rem;
+}
+ul{
+    background-color: #424a5b;
+    width: 16%;
+    height:100%;
+    position: fixed;
+    padding-top: 4%;
+    text-align: center;
+}
+ul li {
+    list-style: none;
+    padding-bottom: 0.9375rem;
+    font-size: 18px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    color:skyblue;
+}
+.content{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+table th{
+    padding:1.25rem;
+    font-size:15px;
+    border: 1px solid black;
+}
+table tr td{
+    padding:1.25rem;
+    border: 1px solid black;
+}

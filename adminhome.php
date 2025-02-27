@@ -12,10 +12,16 @@
 <html>
     <head>
         <title>Admin Dashboard</title>
+        <?php
+            include 'admin_css.php';
+        ?>
     </head>
     <body>
-        <h1>Admin Home</h1>
-
-        <a href="logout.php">Logout</a>
+        <?php 
+            include 'admin_sidebar.php';
+        ?>
+        <div class="content">
+            <h1>Admin Dashboard</h1>
+        </div>
     </body>
 </html>

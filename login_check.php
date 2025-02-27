@@ -5,7 +5,7 @@ session_start();
 $host = "localhost";
 $user = "root";
 $password = "";
-$db = "studentmangment";
+$db = "schoolp";
 
 // Create a new database connection
 $conn = new mysqli($host, $user, $password, $db);
