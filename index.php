@@ -3,6 +3,14 @@ error_reporting(0);
 session_start();
 session_destroy();
 
+$host="localhost";
+$user="root";
+$password="";
+$db="schoolp";
+
+$data=mysqli_connect($host,$user,$password,$db);
+$sql="SELECT * FROM teacher ";
+$result=mysqli_query($data,$sql);
 ?>
 
 
@@ -46,18 +54,19 @@ session_destroy();
         </center>
         <div class="container">
             <div class="row">
+                <?php 
+                    while($info=$result->fetch_assoc()){
+                ?>
                 <div class="col-md-4">
-                    <img class="teacher_img"src="img/teacher1.png">
-                    <p>~Education is the most powerful weapon which you can use to change the world.</p>
+                    <img class="teacher_img"src="<?php echo "{$info['image']}"; ?>">
+                    <h3><?php echo "{$info['name']}"; ?></h3>
+                    <p><?php echo "{$info['description']}"; ?></p>
+
                 </div>
-                <div class="col-md-4">
-                    <img class="teacher_img" src="img/teacher2.png">
-                    <p>~Education is the most powerful weapon which you can use to change the world.</p>
-                </div>
-                <div class="col-md-4">
-                    <img class="teacher_img" src="img/teacher3.png">
-                    <p>~Education is the most powerful weapon which you can use to change the world.</p>
-                </div>
+                        <?php
+                    }
+                    ?>
+
             </div>
         </div>
         <center>

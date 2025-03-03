@@ -31,7 +31,9 @@
                     <div>
                         <input class="btn btn-primary" type="submit" name ="submit" value="login">
                     </div>
-                </form>
+                    <button class="btn btn-danger" type="button" onclick="window.location.href='index.php';">Back</button>
+                    </form>
+                    
             </div>
         </center>
     </body>
