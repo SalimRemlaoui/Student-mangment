@@ -1,5 +1,5 @@
 <?php 
-$current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
+    $current_page = basename($_SERVER['REQUEST_URI']);
 ?>
 
 <header class="header">
@@ -11,7 +11,7 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
         <aside>
                     <ul>
                         <li>
-                            <a href="admission.php" class="<?= ($current_page == 'dashboard.php') ? 'active' : ''; ?>">Admission</a>
+                            <a href="admission.php" class="<?php echo ($current_page == 'admission.php') ? 'active' : ''; ?>">Admission</a>
                         </li>
                         <li>
                             <a href="add_student.php"  class="<?php echo ($current_page == 'add_student.php') ? 'active' : ''; ?>">Add Student</a>

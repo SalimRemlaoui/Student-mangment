@@ -29,9 +29,10 @@
                         <input type="text" name ="password">
                     </div>
                     <div>
-                        <input class="btn btn-primary" type="submit" name ="submit" value="login">
+                        <input class="btn btn-primary" type="submit" name ="submit" value="Login">
+        
+                        <button class="btn btn-danger" type="button" onclick="window.location.href='index.php';">Back</button>
                     </div>
-                    <button class="btn btn-danger" type="button" onclick="window.location.href='index.php';">Back</button>
                     </form>
                     
             </div>
